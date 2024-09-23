@@ -23,12 +23,11 @@ useEffect(()=>{
     const store=data.filter(val=>val.singer===name)
     setStoreMusic(store[0])
     setMusicData(store)
-    console.log(storeMusic)
- 
+
   }
 
   fetchData();
-},[])
+},[name])
 
 
 
