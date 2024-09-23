@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation.js";
 import { FaSearch,FaArrowLeft} from "react-icons/fa";
 export default function Search() {
-  const [music, setMusic] = useState([]);
+
   const [musicBanner, setMusicBanner] = useState([]);
   const [search, setSearch] = useState("");
   const [data, setData] = useState([]);

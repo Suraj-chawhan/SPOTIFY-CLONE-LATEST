@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import Bigplay from  '../../../../public/bigplay.png'
 import {FaArrowLeft} from 'react-icons/fa';
-function page() {
+export default function Singer() {
 const params=useParams()
 const{name}=params;
 const [storeMusic,setStoreMusic]=useState({})
@@ -48,7 +48,7 @@ return (
 <div style={{display:"flex",flexDirection:"column",gap:10,width:"100%",height:"100%",overflowY:"auto"}}>
 {musicData?musicData.map((val,index)=>{
   return(
-<div style={{padding:0,backgroundColor:"#999",display:"flex",justifyContent:'space-between',alignItems:"center",padding:"0px 20px 0px 20px"}}>
+<div  key={index} style={{padding:0,backgroundColor:"#999",display:"flex",justifyContent:'space-between',alignItems:"center",padding:"0px 20px 0px 20px"}}>
 <h1 style={{color:"green"}}>{val.title}</h1>
 <Image src={Bigplay}     onClick={()=>router.push(`/play/${index}/${val.singer}`)} width={100} height={100}  alt="play"/>
 </div>
@@ -59,5 +59,3 @@ return (
   );
 }
 
-export default page
-  

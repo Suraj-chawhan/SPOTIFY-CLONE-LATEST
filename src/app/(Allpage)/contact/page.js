@@ -4,7 +4,7 @@ import React from 'react'
 import Navbar from "../../../../Component/Navbar";
 import { FaArrowLeft } from 'react-icons/fa';
 import { useRouter } from 'next/navigation';
-function about() {
+function Contact() {
   const router=useRouter()
   return (
     <div style={{width:"100%",height:"100%",display:"flex",flexDirection:"column",gap:20}}>
@@ -16,4 +16,4 @@ function about() {
   )
 }
 
-export default about
+export default Contact

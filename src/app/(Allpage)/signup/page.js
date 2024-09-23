@@ -10,7 +10,7 @@ import google from "../../../../public/google.png"
 import github from "../../../../public/github.png"
 import { signIn } from 'next-auth/react'
 
-export default function signup(){
+export default function Signup(){
   const { data: session, status } = useSession();
   const router = useRouter();
 
