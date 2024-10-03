@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { signOut } from 'next-auth/react'
 import { FaSearch } from 'react-icons/fa'
+import styles from "../src/app/page.module.css"
 function Navbar() {
 
   const router=useRouter()
@@ -18,7 +19,7 @@ function Navbar() {
   }
 
   return (
-   <div>
+   
     <nav style={{display:"flex",justifyContent:"space-between",alignItems:"center",backgroundColor:"gray"}}>
         <h1 style={{color:"#4f4",margin:20}} onClick={()=>router.push("/")}> SPOTIFY</h1>
   
@@ -33,7 +34,7 @@ function Navbar() {
         <button onClick={call} style={{backgroundColor:"orange",padding:10,borderRadius:10,color:'blue',boxShadow:"1px 1px black",border:"none"}}>SignOut</button>  
         </div>
     </nav>
-   </div>
+
   )
 }
 

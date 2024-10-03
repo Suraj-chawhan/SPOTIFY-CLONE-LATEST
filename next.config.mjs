@@ -9,9 +9,7 @@ const nextConfig = {
       appDir: true, // Ensures you're using the App Router in Next.js 14
     },
 
-    env: {
-      NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-    },
+   
     // Other configurations can go here
   };
   
