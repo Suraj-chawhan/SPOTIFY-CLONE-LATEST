@@ -92,7 +92,8 @@ setError("Something went wrong")
    </div>
    <br />
    <button style={{color:"white",backgroundColor:"blue",border:"none",borderRadius:5,padding:"15px 37px 15px 37px",fontSize:20,alignSelf:"center"}} onClick={signin}>Login</button>
-   <h4 style={{color:"red"}}>{error}</h4>
+ <p>Do not have account ? <span style={{color:"blue"}} onClick={()=>router.push("/signup")}>Click here</span></p>
+     <h4 style={{color:"red"}}>{error}</h4>
    </div>
   </div>
    </div>
