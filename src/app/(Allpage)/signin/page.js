@@ -86,7 +86,7 @@ setError("Something went wrong")
    <input 
    type="text" value={password} 
    onChange={(e)=>setPassword(e.target.value) }  
-   placeholder="Enter Email"
+   placeholder="Enter Password"
    style={{padding:10,borderBlockColor:"green",border:"none",boxShadow:"0.3px 0.3px black",borderRadius:5}}
    />
    </div>
