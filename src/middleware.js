@@ -7,7 +7,7 @@ export async function middleware(req) {
 const token=await getToken({req,secret:process.env.NEXT_PUBLIC_NEXT_SECRET});
     
   if (!token) {
-    return NextResponse.redirect(new URL('/signin',req.url));
+    return NextResponse.redirect(new URL('/signup',req.url));
   }
  return NextResponse.next();
 }
