@@ -115,6 +115,7 @@ if(res.ok){
   </div>
   <br />
   <button style={{color:"white",backgroundColor:"blue",border:"none",borderRadius:5,padding:"15px 37px 15px 37px",fontSize:20,alignSelf:"center"}} onClick={signup}>Signup</button>
+    <p>Already had account ? <span style={{color:"blue"}} onClick={()=>router.push("/signin")}>Click here</span></p>
   <h4 style={{color:"red"}}>{error}</h4>
   </div>
  </div>
