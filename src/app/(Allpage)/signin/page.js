@@ -55,7 +55,7 @@ setError("Something went wrong")
     
  return(
    <div   style={{backgroundColor:"#333333",width:"100%",height:"100vh",display:"flex",justifyContent:"center",alignItems:"center"}} >
-   <div  ref={ref} style={{width:500,height:600,color:"white",backgroundColor:"black",borderRadius:10,gap:0,boxShadow:"1px 1px black",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",borderTop:"5px solid #3f3"}}>
+   <div  ref={ref} style={{width:500,height:650,color:"white",backgroundColor:"black",borderRadius:10,gap:0,boxShadow:"1px 1px black",display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",borderTop:"5px solid #3f3"}}>
    <Image 
    src={spotify}
    width={140} height={40} 
